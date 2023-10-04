@@ -1,3 +1,63 @@
-body{
-    background-color: black;
+body {
+    background-color: silver;
 }
+.top {
+    text-align: center;
+    /* margin: 10% */
+    height: 10vh;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: inline;
+}
+
+.btns{
+    text-align: center;
+    font-size: 40px;
+}
+
+#board {
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+    height: 200px;
+    width: 500px;
+    background-color: grey;
+    padding: 50px;
+    margin-left: 34%;
+}
+
+#pc_score_div {
+    background-color: #f0f0f0; /* Background color */
+    padding: 10px; /* Padding around the content */
+    border: 2px solid #333; /* Border around the element */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    text-align: center; /* Center align text */
+    width: 200px; /* Width of the element */
+    margin: 0 auto; /* Center the element horizontally */
+  }
+  
+  #user_score_div {
+    background-color: aliceblue; /* Background color */
+    padding: 10px; /* Padding around the content */
+    border: 2px solid #333; /* Border around the element */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    text-align: center; /* Center align text */
+    width: 200px; /* Width of the element */
+    margin: 0 auto; /* Center the element horizontally */
+  }
+  #result-div{
+    padding: 10px; /* Padding around the content */
+    border: 2px solid #333; /* Border around the element */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 15px; /* Font size */
+    text-align: center; /* Center align text */
+    width: 200px; /* Width of the element */
+    margin: 0 auto; /* Center the element horizontally */
+    color: black;
+  }
