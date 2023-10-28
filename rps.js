@@ -44,20 +44,7 @@ playerSelection = ""
 
 let Rock = document.getElementById('rock')
 let Paper = document.getElementById('paper')
-let Scisssors = document.getElementById('scissors')
-
-// Rock.addEventListener("click",function(){
-//   playRound()
-//   playerSelection = "Rock"
-// })
-// Paper.addEventListener("click",function(){
-//   playRound()
-//   playerSelection = "Paper"
-// })
-// Scisssors.addEventListener("click",function(){
-//   playRound()
-//   playerSelection = "Scissors"
-// })
+let Scissors = document.getElementById('scissors')
 
 
 
@@ -82,12 +69,12 @@ Paper.addEventListener("click", function () {
   playerSelection = "Paper";
 });
 
-Scisssors.addEventListener("click", function () {
+Scissors.addEventListener("click", function () {
   if (gameFinished) {
     return; // Exit the function if the game is finished
   }
   playRound();
-  playerSelection = "Scisssors";
+  playerSelection = "Scissors";
 });
 
 
@@ -109,26 +96,31 @@ function playRound(){
   if (playerSelection === "Rock" && computerSelection === "Scissors"){
     user_score = ++user_score;
     user_div.textContent = 'Your Score is!' + user_score                               
-
+    result_div.textContent = 'You chose ' + playerSelection +' And Computer chose ' + computerSelection
    } else if (playerSelection === "Scissors" && computerSelection === "Paper"){
     user_score = ++user_score;
     user_div.textContent = 'Your Score is!' + user_score                               
+    result_div.textContent = 'You chose ' + playerSelection +' And Computer chose ' + computerSelection
 
   } else if (playerSelection === "Paper" && computerSelection === "Rock") {
     user_score = ++user_score;
     user_div.textContent = 'Your Score is!' + user_score                               
+    result_div.textContent = 'You chose ' + playerSelection +' And Computer chose ' + computerSelection
 
   } else if (computerSelection === "Rock" && playerSelection === "Paper"){
   pc_score = ++pc_score;
   pc_div.textContent = 'Computer\s score is' + pc_score                               
+  result_div.textContent = 'You chose ' + playerSelection +' And Computer chose ' + computerSelection
 
   } else if (computerSelection === "Scissors" && playerSelection === "Paper"){
   pc_score = ++pc_score;
   pc_div.textContent = 'Computer\s score is' + pc_score                               
+  result_div.textContent = 'You chose ' + playerSelection +' And Computer chose ' + computerSelection
 
   }   else if (computerSelection === "Paper" && playerSelection === "Rock"){
   pc_score = ++pc_score;
   pc_div.textContent = 'Computer\s score is' + pc_score                               
+  result_div.textContent = 'You chose ' + playerSelection +' And Computer chose ' + computerSelection
 
   } else if (playerSelection === "Rock" && computerSelection === "Rock"){
   result_div.textContent = 'It\'s a draw ! you both chose the same !'
